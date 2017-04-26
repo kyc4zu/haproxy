@@ -5,7 +5,8 @@
 #
 
 # Pull base image.
-FROM ubuntu
+FROM haproxy:1.7
+COPY haproxy.cfg etc/haproxy/haproxy.cfg
 
 # Install Haproxy.
 RUN \
