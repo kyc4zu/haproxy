@@ -26,7 +26,8 @@ VOLUME ["/haproxy-override"]
 WORKDIR /etc/haproxy
 
 # Define default command.
-CMD ["bash", "/haproxy-start"]
+CMD bash
+CMD /haproxy-start
 
 # Expose ports.
 EXPOSE 80
